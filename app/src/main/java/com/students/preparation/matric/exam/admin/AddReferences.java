@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
@@ -33,6 +34,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.students.preparation.matric.exam.Constants;
 import com.students.preparation.matric.exam.R;
+import com.students.preparation.matric.exam.model.Books;
 import com.students.preparation.matric.exam.model.UploadsModel;
 
 import java.text.SimpleDateFormat;
@@ -55,7 +57,7 @@ public class AddReferences extends Fragment implements View.OnClickListener {
     DatabaseReference mDatabaseReference;
 
     Spinner stream, type, subject, grade;
-    String typeSelected = "";
+    private String selectedStream="",selectedGrade,selectedBookType="",selectedSubject="";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -75,37 +77,98 @@ public class AddReferences extends Fragment implements View.OnClickListener {
 
         //getting the views
         textViewStatus = view.findViewById(R.id.textViewStatus);
-        documentTitle = view.findViewById(R.id.admin_input_book_title);
+        documentTitle = view.findViewById(R.id.bookTitle);
         progressBar = view.findViewById(R.id.progressbar);
 
         //attaching listeners to views
         view.findViewById(R.id.buttonUploadFile).setOnClickListener(this);
         view.findViewById(R.id.textViewUploads).setOnClickListener(this);
 
-        stream = view.findViewById(R.id.admin_stream);
-        grade = view.findViewById(R.id.admin_grade);
-        type = view.findViewById(R.id.admin_type);
-        subject = view.findViewById(R.id.admin_subject);
+        stream = view.findViewById(R.id.bookStream);
+        grade = view.findViewById(R.id.bookGrade);
+        type = view.findViewById(R.id.bookType);
+        subject = view.findViewById(R.id.bookSubject);
 
+        final String[] streamArray = getResources().getStringArray(R.array.meseretStream);
 
+        ArrayAdapter<CharSequence> streamAdapter = new ArrayAdapter<CharSequence>(getActivity(),
+                R.layout.spinner_text, streamArray );
+        streamAdapter.setDropDownViewResource(R.layout.simple_spinner_drop_down);
+        stream.setAdapter(streamAdapter);
+        stream.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String text = ((TextView)view).getText().toString();
+                if(!text.equals(streamArray[0])){
+                    selectedStream = text;
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        final String[] gradeArray = getResources().getStringArray(R.array.meseretGrade);
+
+        ArrayAdapter<CharSequence> gradesAdapter = new ArrayAdapter<CharSequence>(getActivity(),
+                R.layout.spinner_text, gradeArray );
+        streamAdapter.setDropDownViewResource(R.layout.simple_spinner_drop_down);
+        grade.setAdapter(gradesAdapter);
+        grade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String text = ((TextView)view).getText().toString();
+                if(!text.equals(gradeArray[0])){
+                    selectedGrade = text;
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        final String[] bookTypeArray = getResources().getStringArray(R.array.booksType);
+
+        ArrayAdapter<CharSequence> bookTypeAdapter = new ArrayAdapter<CharSequence>(getActivity(),
+                R.layout.spinner_text, bookTypeArray );
+        streamAdapter.setDropDownViewResource(R.layout.simple_spinner_drop_down);
+        type.setAdapter(bookTypeAdapter);
         type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-               // Toast.makeText(getApplicationContext() , "POS: " + position , Toast.LENGTH_LONG).show();
-                if (position == 1) {
-                    //mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_TEXTBOOKS);
-                    typeSelected = Constants.DATABASE_PATH_TEXTBOOKS;
-
-                } else if (position == 2) {
-                    //mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_TEACHERS_GUIDE);
-                    typeSelected = Constants.DATABASE_PATH_TEACHERS_GUIDE;
-
-                } else if (position == 3) {
-                    //mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_ADMIN_UPLOADS);
-                    typeSelected = Constants.DATABASE_PATH_ADMIN_UPLOADS;
-
+                String text = ((TextView)view).getText().toString();
+                if(!text.equals(bookTypeArray[0])){
+                    selectedBookType = text;
                 }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        final String[] subjectArray = getResources().getStringArray(R.array.subjects_array);
+
+        ArrayAdapter<CharSequence> subjectAdapter = new ArrayAdapter<CharSequence>(getActivity(),
+                R.layout.spinner_text, subjectArray );
+        streamAdapter.setDropDownViewResource(R.layout.simple_spinner_drop_down);
+        subject.setAdapter(subjectAdapter);
+        subject.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String text = ((TextView)view).getText().toString();
+                if(!text.equals(subjectArray[0])){
+                    selectedSubject = text;
+                }
+
             }
 
             @Override
@@ -179,22 +242,21 @@ public class AddReferences extends Fragment implements View.OnClickListener {
 
                                 String timestamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss")
                                         .format(new Date());
-                                //Log.d("StudentDashboard", "Current Timestamp: " + format);
 
-                                UploadsModel uploadsModel = new UploadsModel(
-                                        documentTitle.getText().toString(),
-                                        downloadUrl.toString(),
-                                        stream.getSelectedItem().toString(),
-                                        grade.getSelectedItem().toString(),
-                                        type.getSelectedItem().toString(),
-                                        subject.getSelectedItem().toString(),
-                                        timestamp);
+                                String title = documentTitle.getText().toString();
+                                Books books = new Books(
+                                        title,
+                                        selectedStream,
+                                        selectedGrade,
+                                        selectedBookType,
+                                        selectedSubject,
+                                        downloadUrl.toString()
+                                );
                                 mDatabaseReference.child(mDatabaseReference.push().getKey())
-                                        .setValue(uploadsModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        .setValue(books).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
-                                        textViewStatus.setText("This reference book is " +
-                                                "registered successfully");
+                                        textViewStatus.setText("This book is registered successfully");
                                     }
                                 });
                             }
@@ -239,6 +301,6 @@ public class AddReferences extends Fragment implements View.OnClickListener {
 
     private void dbPath() {
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_REFERENCE_BOOKS);
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_BOOKS);
     }
 }

@@ -20,6 +20,8 @@
     <string name="telegram_channel">Telegram channel</string>
     <string name="menu_send">Contact Us</string>
     <string name="add_admins">Add admins</string>
+    <string name="add_books">Add books</string>
+    <string name="menu_worksheet">add Work sheet</string>
 
     <string-array name="home_menu">
         <item>Students Text Books</item>
@@ -59,6 +61,7 @@
         <item>Select question type</item>
         <item>Normal</item>
         <item>Image</item>
+        <item>formula</item>
     </string-array>
 
     <string-array name="meseretGrade">
@@ -111,6 +114,16 @@
     <string-array name="type">
         <item>Select Type</item>
         <item>Textbook</item>
+        <item>Teachers Guide</item>
+        <item>Admin Inbox</item>
+        <!--item>Shortnote</item>
+        <item>Study Tip</item-->
+    </string-array>
+
+    <string-array name="admin_type">
+        <item>Select Type</item>
+        <item>Reference books</item>
+        <item>Text book</item>
         <item>Teachers Guide</item>
         <item>Admin Inbox</item>
         <!--item>Shortnote</item>

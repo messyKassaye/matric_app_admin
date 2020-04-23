@@ -107,6 +107,9 @@ private Toolbar toolbar;
         }else if(id== R.id.nav_news){
             fragment = new AddNewsFragment();
             toolbar.setTitle("Add news");
+        }else if (id==R.id.nav_worksheet){
+            fragment = new WorkSheetFragment();
+            toolbar.setTitle("Add work sheet");
         }
 
         if (fragment != null) {

@@ -86,11 +86,9 @@ public class StudentDashboard extends AppCompatActivity {
                 R.id.nav_reference,
                 R.id.nav_tutorials,
                 R.id.nav_plasma,
-                R.id.nav_teachers_guide,
                 R.id.nav_shortnotes,
                 R.id.nav_entrance_exam,
                 R.id.nav_model_exam,
-                R.id.nav_uploads,
                 R.id.nav_studytips,
                 R.id.nav_teachers,
                 R.id.nav_send)
