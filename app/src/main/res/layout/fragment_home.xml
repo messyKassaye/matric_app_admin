@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/home_home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light_font"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:text="Practice Makes Perfect"/>
+
+        <TextView
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light_font"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Start practicing your matric exam now. Get Satisfying grade and make your family proud of you">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="All students text book, teachers guides and reference books included "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=" Entrance exam, model exam and worksheets Included"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=" It also have a platform for teachers to teach through this app, give quizzes and also show grades"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=" Students get updated information from NEAEA and MOE."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="students can get posts from their school"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Students can communicate with other students from another school."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="short notes, study tips are provided"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_green24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=" students can create their own short notes and a lot of features."/>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/Natural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:src="@drawable/cover"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="card image"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Natural Science"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/math"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="4"
+                            android:text="Mathematics"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/physics"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Physics"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/biology"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Biology"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/chemistry"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Chemistry"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:src="@drawable/cover"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="card image"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Social Science"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/maths"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:text="Mathematics for social science"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/economics"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Economics"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/history"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="History"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/geography"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Geography"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:src="@drawable/cover"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="card image"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="Common"
+                        android:layout_marginBottom="20dp"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/english"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="English"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/civics"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Civics"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="1"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/apptitude"/>
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="5"
+                            android:text="Aptitude"
+                            android:textColor="#242424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>

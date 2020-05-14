@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_below="@+id/appToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="40dp"
+
+            android:paddingRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:padding="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="25dp"
+                android:text="Contact us. We are available at any time."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/contact_tg"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/tg"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_tg"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/contact_email"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/email"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_email"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/contact_phone"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/dial"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_phone"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/join_tg_group"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/tg"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_tg_group"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/website"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/tg"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Website"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/join_tg_channel"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/tg"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="15dp"
+                        android:textSize="25sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_tg_channel"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/light_font"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/special_thanks"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/light_font"
+                    android:text="@string/araya"
+                    android:layout_marginTop="5dp"
+
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/light_font"
+                    android:text="@string/getahun"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
